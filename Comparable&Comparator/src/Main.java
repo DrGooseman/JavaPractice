@@ -1,3 +1,5 @@
+import java.util.Collections;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,6 +14,18 @@ public class Main {
         System.out.println("SORT BY PRICE");
 
         theatre.getSeatsByPrice();
+
+
+        /// or new way
+
+        theatre.getSeatsByPriceNewWay();
+
+
+
+
+
+
+
 //        if(theatre.reserveSeat("H11")) {
 //            System.out.println("Please pay");
 //        } else {

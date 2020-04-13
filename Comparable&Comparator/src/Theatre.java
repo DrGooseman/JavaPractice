@@ -56,6 +56,9 @@ public class Theatre {
 
     }
 
+
+
+
     // for testing
     public void getSeats() {
         for(Seat seat : seats) {
@@ -67,6 +70,24 @@ public class Theatre {
         List<Theatre.Seat> priceSeats = new ArrayList<>(seats);
         Collections.sort(priceSeats, PRICE_ORDER);
 
+        for(Seat seat : priceSeats) {
+            System.out.println(seat.getSeatNumber() + " $" + seat.getPrice());
+        }
+    }
+
+    public void getSeatsByPriceNewWay() {
+        List<Theatre.Seat> priceSeats = new ArrayList<>(seats);
+
+
+
+        Collections.sort(priceSeats, (a, b)->
+                Comparator.comparing(Seat::getPrice)
+                        .reversed().thenComparing(Seat::getSeatNumber)
+                        .compare(a ,b));
+
+
+
+        System.out.println("getSeatsByPriceNewWay");
         for(Seat seat : priceSeats) {
             System.out.println(seat.getSeatNumber() + " $" + seat.getPrice());
         }
