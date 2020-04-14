@@ -1,0 +1,20 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:controller="EventHandler.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" gridLinesVisible="true">
+
+    <padding>
+        <Insets top="10"/>
+    </padding>
+
+<!--    <columnConstraints>-->
+<!--        <ColumnConstraints percentWidth="20.0"/>-->
+<!--        <ColumnConstraints percentWidth="20.0"/>-->
+<!--    </columnConstraints>-->
+    <TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="0" onKeyReleased="#handleKeyReleased" />
+        <Button fx:id="helloButton" text="Say Hello" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#onButtonClicked"/>
+    <Button fx:id="byeButton" text="Say Bye" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#onButtonClicked"/>
+    <CheckBox fx:id="checkBox" text="Clear the field after saying hello or bye" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="2" onAction="#handleChange"/>
+
+</GridPane>
