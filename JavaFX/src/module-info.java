@@ -5,4 +5,5 @@ module JavaFX {
     opens HelloWorld;
     opens GridPane;
     opens EventHandler;
+    opens Service;
 }
