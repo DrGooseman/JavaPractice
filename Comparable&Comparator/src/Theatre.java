@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.*;
 
 
@@ -85,7 +86,24 @@ public class Theatre {
                         .reversed().thenComparing(Seat::getSeatNumber)
                         .compare(a ,b));
 
-
+//        String[] strings = {"hi", "bi"};
+//
+//        Arrays.sort(strings, new Comparator<String>() {
+//            @Override
+//            public int compare(String a1, String a2) {
+//                BigDecimal a = new BigDecimal(a1);
+//                BigDecimal b = new BigDecimal(a2);
+//                return a.compareTo(b);
+//            }
+//        });
+//
+//        Arrays.sort(strings, (String a, String b) -> {
+//            BigDecimal bd1 = new BigDecimal(a);
+//            return bd1.compareTo(new BigDecimal(b));
+//        });
+//
+//        Arrays.sort(strings, (a,b) ->
+//                new BigDecimal(a).compareTo(new BigDecimal(b)));
 
         System.out.println("getSeatsByPriceNewWay");
         for(Seat seat : priceSeats) {
