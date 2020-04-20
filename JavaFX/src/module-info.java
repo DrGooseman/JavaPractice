@@ -6,4 +6,5 @@ module JavaFX {
     opens GridPane;
     opens EventHandler;
     opens Service;
+    opens BorderPaneAndOthers;
 }
