@@ -1,4 +1,4 @@
-package BorderPaneAndOthers;
+package Controls;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -7,4 +7,5 @@ module JavaFX {
     opens EventHandler;
     opens Service;
     opens BorderPaneAndOthers;
+    opens Controls;
 }

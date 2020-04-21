@@ -32,7 +32,7 @@
         <?import javafx.scene.layout.HBox?>
         <?import javafx.scene.layout.BorderPane?>
         <?import javafx.scene.control.Label?>
-        <BorderPane fx:controller="HBox.Controller"
+        <BorderPane fx:controller="BorderPaneAndOthers.Controller"
         xmlns:fx="http://javafx.com/fxml" >
         <top>
         <Label text="This label is in the top position" alignment="center"
